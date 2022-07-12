@@ -16,6 +16,8 @@ plot(df$final, df$Global_active_power, type="l", xlab="", ylab="Global Active Po
 plot(df$final, df$Sub_metering_1, col = "black", type = "l", xlab = "", ylab = "Energy sub metering")
 lines(df$final, df$Sub_metering_3, col="blue")
 lines(df$final, df$Sub_metering_2, col = "red")
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "blue", "red"), pch = 19)
+
 plot(df$final, df$Voltage, type = "l", xlab ="datetime", ylab = "Voltage")
 plot(df$final, df$Global_reactive_power, type="l", xlab="", ylab="Global Active Power (kilowatts)", ylim = c(0.0,0.5))
 
